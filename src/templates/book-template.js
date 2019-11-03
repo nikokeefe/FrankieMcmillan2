@@ -12,7 +12,6 @@ import styles from '../css/template.module.css';
 const Template = ({ data }) => {
   const {
     title,
-    shortDescription,
     publishedDate,
     content: { content },
     featuredImage,

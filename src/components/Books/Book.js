@@ -25,7 +25,7 @@ const Book = ({ book }) => {
   const img = data.file.childImageSharp.fluid;
 
   // title, shortDescription
-  const { title, slug, featuredImage, imageGallery } = book;
+  const { title, slug, featuredImage } = book;
 
   let mainImage = featuredImage ? featuredImage.fluid : img;
 

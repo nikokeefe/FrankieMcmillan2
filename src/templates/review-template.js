@@ -12,7 +12,6 @@ const Review = ({ data }) => {
     title,
     publishedDate,
     content: { json },
-    featuredImage,
   } = data.review;
 
   const options = {
@@ -23,6 +22,7 @@ const Review = ({ data }) => {
             <img
               width="400px"
               src={node.data.target.fields.file['en-US'].url}
+              alt="review"
             />
           </div>
         );
