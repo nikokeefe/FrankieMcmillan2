@@ -16,7 +16,7 @@ const getFeaturedBooks = graphql`
           title
           shortDescription
           slug
-          seoImage {
+          featuredImage {
             fluid {
               ...GatsbyContentfulFluid_tracedSVG
             }
