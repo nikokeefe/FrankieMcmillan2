@@ -9,7 +9,7 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 const getDefaultImage = graphql`
   query {
-    file(relativePath: { eq: "defaultBcg.jpeg" }) {
+    file(relativePath: { eq: "defaultBcg.jpg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid

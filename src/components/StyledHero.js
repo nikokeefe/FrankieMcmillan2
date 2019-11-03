@@ -6,7 +6,7 @@ import BackgroundImage from 'gatsby-background-image';
 
 const getDefaultImage = graphql`
   query {
-    defaultBcg: file(relativePath: { eq: "defaultBcg.jpeg" }) {
+    defaultBcg: file(relativePath: { eq: "defaultBcg.jpg" }) {
       childImageSharp {
         fluid(quality: 90, maxWidth: 4160) {
           ...GatsbyImageSharpFluid_withWebp
