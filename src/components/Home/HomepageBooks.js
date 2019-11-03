@@ -18,7 +18,7 @@ const getHomepageBooks = graphql`
           slug
           featuredImage {
             fluid {
-              ...GatsbyContentfulFluid_tracedSVG
+              ...GatsbyContentfulFluid
             }
           }
         }
