@@ -1,0 +1,20 @@
+.books {
+  padding: 4rem 0;
+  text-align: center;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto;
+}
+@media screen and (min-width: 576px) {
+  .center {
+    grid-template-columns: repeat(auto-fill, minmax(368.66px, 1fr));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .center {
+    width: 80%;
+    max-width: 1170px;
+  }
+}

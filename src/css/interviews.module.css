@@ -1,0 +1,34 @@
+.interviews {
+  background: var(--mainGrey);
+  padding: 4rem 0;
+}
+.center {
+  width: 80vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-column-gap: 2rem;
+}
+.interview {
+  margin: 2rem auto;
+  text-align: center;
+}
+.interview span {
+  background: var(--primaryColor);
+  padding: 0.5rem;
+  display: inline-block;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  border-radius: 30px;
+}
+.interview h4 {
+  text-transform: uppercase;
+}
+
+.interview a {
+  color: black;
+}
+
+.interview a h4 {
+  color: var(--primaryColor);
+}
