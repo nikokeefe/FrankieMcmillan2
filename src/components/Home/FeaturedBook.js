@@ -18,7 +18,7 @@ const getFeaturedBooks = graphql`
           slug
           featuredImage {
             fluid {
-              ...GatsbyContentfulFluid_tracedSVG
+              ...GatsbyContentfulFluid
             }
           }
         }
