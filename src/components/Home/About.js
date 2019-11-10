@@ -6,11 +6,11 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import Title from '../Title';
 
 import styles from '../../css/about.module.css';
-// import img from '../../images/defaultBcg.jpeg';
+// import img from '../../images/defaultBcg.jpg';
 
 const getAbout = graphql`
   query aboutImage {
-    aboutImage: file(relativePath: { eq: "defaultBcg.jpg" }) {
+    aboutImage: file(relativePath: { eq: "allBooksBcg.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid_tracedSVG
@@ -29,7 +29,7 @@ const About = () => {
       <div className={styles.aboutCenter}>
         <article className={styles.aboutImg}>
           <div className={styles.imgContainer}>
-            {/* <img src={img} alt="about company" /> */}
+            {/* <img src={img} alt="about frankie" /> */}
             <Image
               fluid={aboutImage.childImageSharp.fluid}
               alt="frankie in the garden"

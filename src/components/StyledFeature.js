@@ -4,9 +4,9 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 import BackgroundImage from 'gatsby-background-image';
 
-const getDefaultImage = graphql`
+const getDefaultFeaturedImage = graphql`
   query {
-    defaultBcg: file(relativePath: { eq: "frankie_backyardBW.jpg" }) {
+    featured: file(relativePath: { eq: "defaultFeatured.jpg" }) {
       childImageSharp {
         fluid(quality: 90, maxWidth: 4160) {
           ...GatsbyImageSharpFluid_withWebp
@@ -16,14 +16,14 @@ const getDefaultImage = graphql`
   }
 `;
 
-const StyledHero = ({ img, className, children, home }) => {
+const StyledFeature = ({ img, className, children, home }) => {
   // set default image
-  const data = useStaticQuery(getDefaultImage);
+  const data = useStaticQuery(getDefaultFeaturedImage);
 
   return (
     <BackgroundImage
       className={className}
-      fluid={img || data.defaultBcg.childImageSharp.fluid}
+      fluid={img || data.featured.childImageSharp.fluid}
       home={home}
     >
       {children}
@@ -31,7 +31,7 @@ const StyledHero = ({ img, className, children, home }) => {
   );
 };
 
-export default styled(StyledHero)`
+export default styled(StyledFeature)`
   min-height: ${props => (props.home ? 'calc(100vh - 62px)' : '50vh')};
   background: ${props =>
     props.home

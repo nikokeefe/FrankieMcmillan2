@@ -1,8 +1,15 @@
 .book {
-  box-shadow: var(--lightShadow);
+  position: relative;
   transition: var(--mainTransition);
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 .book:hover {
+  cursor: pointer;
+  transform: scale(1.02);
   box-shadow: var(--darkShadow);
 }
 
@@ -11,20 +18,20 @@ article {
 }
 
 .img-container {
-  position: relative;
-  width: 300px;
-  background: var(--primaryColor);
-  transition: var(--mainTransition);
 }
+
 .img {
   transition: var(--mainTransition);
+  border-radius: 5px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .img-container:hover .img {
-  opacity: 0.3;
 }
 
 .link {
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -36,14 +43,15 @@ article {
   padding: 0.5rem 0.7rem;
   display: inline-block;
   transition: var(--mainTransition);
-  cursor: pointer;
+  cursor: pointer; */
 }
 .link:hover {
-  background: var(--mainWhite);
-  color: var(--primaryColor);
+  /* background: var(--mainWhite);
+  color: var(--primaryColor); */
+  /* transform: scale(1.02); */
 }
 .img-container:hover .link {
-  opacity: 1;
+  /* opacity: 1; */
 }
 
 .footer {

@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Assistant:200,400,700|Playfair+Display:400,700&display=swap');
 
 :root {
-  --primaryColor: #593b8a;
+  --primaryColor: #505050;
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
   --mainBlack: #222;
   --mainGrey: #ececec;
   --darkGrey: #afafaf;
-  --mainTransition: all 0.3s linear;
-  --mainSpacing: 2px;
+  --mainTransition: all 0.3s ease;
+  --mainSpacing: 5px;
   --bodySpacing: 1px;
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
@@ -24,7 +24,7 @@ body {
   font-family: 'Assistant', sans-serif;
   font-weight: 400;
   color: var(--mainBlack);
-  background: var(--mainWhite);
+  background: var(--mainGrey);
   line-height: 1.4;
   font-size: 1.3rem;
 }
@@ -53,8 +53,17 @@ a {
 
 .defaultHero {
   min-height: calc(100vh - 62px);
-  background: linear-gradient(rgba(89, 59, 138, 0.7), rgba(0, 0, 0, 0.7)),
+  background: linear-gradient(rgba(50, 50, 50, 0.7), rgba(0, 0, 0, 0.7)),
     url('../images/defaultBcg.jpg') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.defaultFeatured {
+  min-height: calc(100vh - 62px);
+  background: linear-gradient(rgba(50, 50, 50, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../images/defaultFeatured.jpg') center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;

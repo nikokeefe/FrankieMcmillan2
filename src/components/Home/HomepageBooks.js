@@ -33,7 +33,7 @@ const HomepageBooks = () => {
 
   return (
     <section className={styles.books}>
-      <Title title="" subtitle="Books" />
+      <Title title="More" subtitle="Books" />
       <div className={styles.center}>
         {homepageBooks.map(({ node }) => {
           return <Book key={node.contentful_id} book={node} />;

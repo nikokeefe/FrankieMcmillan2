@@ -8,7 +8,7 @@ import interviews from '../../constants/interviews';
 const Interviews = () => {
   return (
     <section className={styles.interviews}>
-      <Title title="" subtitle="Interviews" />
+      <Title title="Radio" subtitle="Interviews" />
       <div className={styles.center}>
         {interviews.map((item, index) => {
           return (

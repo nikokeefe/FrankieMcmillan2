@@ -1,10 +1,9 @@
 import React from 'react';
 import Image from 'gatsby-image';
 import PropTypes from 'prop-types';
-import { useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql, navigate } from 'gatsby';
 
 import styles from '../../css/book.module.css';
-import { GiScrollUnfurled } from 'react-icons/gi';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 const getDefaultImage = graphql`
@@ -33,20 +32,12 @@ const Book = ({ book }) => {
 
   return (
     <article className={styles.book}>
-      <div className={styles.imgContainer}>
+      <div
+        className={styles.imgContainer}
+        onClick={() => navigate(`/books/${book.slug}`)}
+      >
         <Image fluid={mainImage} className={styles.img} alt="single book" />
-        <AniLink cover className={styles.link} to={`/books/${slug}`}>
-          details
-        </AniLink>
-      </div>
-      <div className={styles.footer}>
-        <h3>{title}</h3>
-        <div className={styles.info}>
-          <h4 className={styles.country}>
-            <GiScrollUnfurled className={styles.icon} />
-            {title || 'default title'}
-          </h4>
-        </div>
+        <AniLink cover className={styles.link} to={`/books/${slug}`}></AniLink>
       </div>
     </article>
   );

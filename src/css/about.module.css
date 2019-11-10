@@ -1,6 +1,4 @@
 .about {
-  background: var(--mainGrey);
-  /* z-index: -2; */
   padding: 4rem 0;
 }
 .about-center {
@@ -41,13 +39,13 @@
 
   .about-img,
   .about-info {
-    margin: 0;
+    margin: 1rem;
+    width: 500px;
   }
   .about-img img {
-    max-height: 500px;
   }
   .img-container {
-    max-height: 500px;
+    width: 500px;
   }
   .about-info p {
     width: 80%;

@@ -1,25 +1,30 @@
 .books {
-  padding: 4rem 0;
+  padding: 4rem 4rem;
   text-align: center;
 }
 .center {
   width: 80vw;
-  margin: 4rem auto;
+  margin: 4rem 1rem;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, 300px, 1fr);
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
+  justify-content: center;
 }
 @media screen and (min-width: 576px) {
   .center {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 4rem 0;
+    grid-template-columns: repeat(auto-fill, 300px, 1fr);
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
   .center {
     width: 100%;
-    max-width: 1170px;
+    text-align: center;
+    padding: 4rem 2rem;
+    justify-content: center;
   }
 }

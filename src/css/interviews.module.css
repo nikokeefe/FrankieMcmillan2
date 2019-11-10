@@ -1,5 +1,5 @@
 .interviews {
-  background: var(--mainGrey);
+  background: var(--darkGrey);
   padding: 4rem 0;
 }
 .center {
@@ -15,6 +15,7 @@
 }
 .interview span {
   background: var(--primaryColor);
+  color: var(--offWhite);
   padding: 0.5rem;
   display: inline-block;
   font-size: 2rem;
