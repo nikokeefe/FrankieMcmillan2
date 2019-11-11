@@ -7,13 +7,14 @@ import { FaMoneyBillWave, FaMap } from 'react-icons/fa';
 
 import Layout from '../components/Layout';
 import StyledHero from '../components/StyledHero';
+
 import styles from '../css/template.module.css';
 
 const Template = ({ data }) => {
   const {
     title,
     publishedDate,
-    content: { content },
+    content: { childMarkdownRemark },
     featuredImage,
     imageGallery,
   } = data.book;
@@ -47,7 +48,13 @@ const Template = ({ data }) => {
               <FaMap className={styles.icon} />
               published: {publishedDate}
             </p>
-            <p className={styles.desc}>{content}</p>
+            <div className={styles.desc}>
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: `${childMarkdownRemark.html}`,
+                }}
+              ></div>
+            </div>
           </div>
           <AniLink paintDrip to="/books" className="btn-primary">
             back to books
@@ -65,16 +72,18 @@ export const query = graphql`
       shortDescription
       publishedDate(formatString: "dddd MMMM, YYYY")
       content {
-        content
+        childMarkdownRemark {
+          html
+        }
       }
       featuredImage {
         fluid {
-          ...GatsbyContentfulFluid
+          src
         }
       }
       imageGallery {
         fluid {
-          ...GatsbyContentfulFluid
+          src
         }
       }
     }

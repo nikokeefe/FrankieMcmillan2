@@ -4,6 +4,10 @@ export default [
     text: 'home',
   },
   {
+    path: '/about',
+    text: 'about',
+  },
+  {
     path: '/books',
     text: 'books',
   },

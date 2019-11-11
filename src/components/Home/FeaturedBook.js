@@ -36,7 +36,7 @@ const FeaturedBooks = () => {
 
   return (
     <section className={styles.books}>
-      <Title title="" subtitle="Latest..." />
+      <Title title="Latest" subtitle="Publication" />
       <div className={styles.center}>
         {featuredBook.map(({ node }) => {
           return;
@@ -44,11 +44,15 @@ const FeaturedBooks = () => {
       </div>
       <StyledFeature img={image} home={true}>
         <Banner
-          titleTop="frankie"
-          titleBottom="mcmillan"
-          info="Discover Frankie's latest book, The Father of Octopus Wresting and other small fictions"
+          titleTop="Octopus"
+          titleBottom="Wrestling"
+          info="Frankie's latest foray into short short-stories flares and sparkles in unexpected ways"
         >
-          <AniLink fade to="/books" className="btn-primary">
+          <AniLink
+            fade
+            to="/books/the-father-of-octopus-wrestling-and-other-short-fictions"
+            className="btn-primary"
+          >
             more
           </AniLink>
         </Banner>

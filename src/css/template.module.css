@@ -1,6 +1,7 @@
 .template {
   padding: 4rem 0;
 }
+
 .center {
   width: 80vw;
   margin: 0 auto;
@@ -36,8 +37,43 @@
   margin-right: 0.5rem;
 }
 .desc {
-  line-height: 2;
+  width: 80vw;
+  margin: 0 auto;
 }
+
+.desc p {
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 200;
+  color: var(--mainBlack);
+  margin: 40px 0;
+}
+
+.desc blockquote {
+  margin: 0 0 60px 0;
+}
+
+.desc blockquote:before {
+  content: url('../images/quote.svg');
+  display: inline-block;
+  width: 50px;
+  transform: translateY(30px);
+}
+
+.desc blockquote p {
+  font-family: sans-serif;
+  font-size: 22px;
+  line-height: 40px;
+  font-weight: 600;
+}
+
+.desc img {
+  border-radius: 5px;
+  max-width: 80vw;
+  box-shadow: 0px 10px 10px -2px rgba(10, 10, 10, 0.15);
+}
+
 .template h4 {
   text-transform: capitalize;
 }
@@ -50,12 +86,11 @@
 @media screen and (min-width: 992px) {
   .journey,
   .desc {
-    width: 70vw;
+    width: 80vw;
   }
 }
 @media screen and (min-width: 1200px) {
   .center {
-    width: 95vw;
     max-width: 1170vw;
   }
   .images {

@@ -19,10 +19,10 @@ const TitleWrapper = styled.div`
   h4 {
     text-align: center;
     letter-spacing: 7px;
-    color: var(--primaryColor);
+    color: var(--secondaryColor);
   }
   .title {
-    color: var(--mainBlack);
+    color: var(--primaryColor);
   }
   span {
     display: block;

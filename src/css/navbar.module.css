@@ -16,7 +16,6 @@
 }
 
 .logo-icon {
-  color: var(--primaryColor);
   font-size: 1.5rem;
 }
 .fm-logo {
@@ -32,7 +31,7 @@
 }
 
 .show-nav {
-  height: 250px;
+  height: 320px;
 }
 
 .nav-links a {
