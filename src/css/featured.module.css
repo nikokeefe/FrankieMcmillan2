@@ -21,8 +21,34 @@
 	padding: 1rem;
 }
 
-.gridBanner h2,
-p {
+.gridBanner h2 {
+	position: relative;
+	animation: mainFeaturedHeading;
+	animation-duration: 2s;
+}
+
+@keyframes mainFeaturedHeading {
+	0% {
+		right: -600px;
+	}
+	100% {
+		right: 0px;
+	}
+}
+
+.gridBanner p {
+	position: relative;
+	animation: mainFeaturedParagraph;
+	animation-duration: 2s;
+}
+
+@keyframes mainFeaturedParagraph {
+	0% {
+		right: -600px;
+	}
+	100% {
+		right: 0px;
+	}
 }
 
 @media screen and (min-width: 576px) {

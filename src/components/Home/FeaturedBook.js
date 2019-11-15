@@ -52,6 +52,7 @@ const FeaturedBooks = () => {
 					<StyledFeature img={image} home={true}></StyledFeature>
 					<div className={styles.gridBanner}>
 						<Banner
+							motion='right'
 							titleTop='‘Every story is like a sky rocket we haven’t seen before – flaring and sparkling in unexpected ways.’ '
 							titleBottom=''
 							info='Lloyd Jones.'
