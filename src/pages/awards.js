@@ -3,20 +3,20 @@ import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 import StyledHero from '../components/StyledHero';
-import Books from '../components/Books/Books';
+import AwardList from '../components/Awards/AwardList';
 
-const books = ({ data }) => {
+const awards = ({ data }) => {
 	return (
 		<Layout>
 			<StyledHero img={data.defaultBcg.childImageSharp.fluid} />
-			<Books />
+			<AwardList />
 		</Layout>
 	);
 };
 
 export const query = graphql`
 	query {
-		defaultBcg: file(relativePath: { eq: "frankie_reading.jpg" }) {
+		defaultBcg: file(relativePath: { eq: "reviewBcg.jpg" }) {
 			childImageSharp {
 				fluid(quality: 90, maxWidth: 4160) {
 					...GatsbyImageSharpFluid_withWebp
@@ -26,4 +26,4 @@ export const query = graphql`
 	}
 `;
 
-export default books;
+export default awards;

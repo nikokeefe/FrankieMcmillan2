@@ -1,0 +1,45 @@
+.award {
+	padding: 1.5rem auto;
+}
+
+.awards {
+	padding: 4rem 0;
+}
+
+.center {
+	width: 100vw;
+	margin: auto;
+	text-align: center;
+	justify-content: center;
+}
+
+.award ul {
+	list-style-type: none;
+}
+
+.award a {
+	padding: 2rem;
+}
+
+.awards a {
+	color: var(--primaryColor);
+}
+
+.listItem {
+	padding: 1rem;
+}
+
+.date {
+	padding: 0 1rem;
+	font-weight: 600;
+}
+
+.description {
+	font-style: italic;
+}
+
+.line {
+	width: 50px;
+	width: 80vw;
+	margin: 0 auto;
+}

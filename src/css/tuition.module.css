@@ -1,0 +1,13 @@
+.teach {
+	padding: 4rem 1rem;
+	background-color: var(--mainGrey);
+}
+
+.center {
+	width: 80vw;
+	margin: 0 auto;
+}
+
+.teach p {
+	padding: 4rem auto;
+}

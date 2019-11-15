@@ -1,29 +1,31 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-import About from '../components/Home/About';
 import Layout from '../components/Layout';
 import StyledHero from '../components/StyledHero';
+import About from '../components/About/About';
 
-const interviews = ({ data }) => {
-  return (
-    <Layout>
-      <StyledHero img={data.defaultBcg.childImageSharp.fluid} />
-      <About />
-    </Layout>
-  );
+const about = ({ data }) => {
+	return (
+		<Layout>
+			<div className=''>
+				<StyledHero img={data.defaultBcg.childImageSharp.fluid} />
+				<About />
+			</div>
+		</Layout>
+	);
 };
 
 export const query = graphql`
-  query {
-    defaultBcg: file(relativePath: { eq: "defaultBcg.jpg" }) {
-      childImageSharp {
-        fluid(quality: 90, maxWidth: 4160) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-  }
+	query {
+		defaultBcg: file(relativePath: { eq: "frankie_armchair.jpg" }) {
+			childImageSharp {
+				fluid(quality: 90, maxWidth: 4160) {
+					...GatsbyImageSharpFluid_withWebp
+				}
+			}
+		}
+	}
 `;
 
-export default interviews;
+export default about;

@@ -4,6 +4,7 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
 import Layout from '../components/Layout';
+import StyledHero from '../components/StyledHero';
 
 import styles from '../css/single-review.module.css';
 
@@ -32,6 +33,7 @@ const Review = ({ data }) => {
 
   return (
     <Layout>
+      <StyledHero />
       <section className={styles.review}>
         <div className={styles.center}>
           <h1>{title}</h1>

@@ -1,20 +1,38 @@
 .books {
-  padding: 4rem 0;
-  text-align: center;
+	padding: 4rem 0;
+	text-align: center;
 }
 .center {
-  display: flex;
-  justify-content: center;
-  margin: 1rem auto;
+	justify-content: right;
+	margin: 1rem auto;
 }
+
+.grid {
+	display: grid;
+	position: relative;
+	grid-template-columns: 1fr 1fr;
+}
+
+.gridBanner {
+	background: rgba(75, 37, 113, 1);
+	background: linear-gradient(rgba(75, 37, 113, 1), rgba(0, 0, 0, 0.7));
+	display: flex;
+	align-items: center;
+	padding: 1rem;
+}
+
+.gridBanner h2,
+p {
+}
+
 @media screen and (min-width: 576px) {
-  .center {
-    grid-template-columns: repeat(auto-fill, minmax(368.66px, 1fr));
-  }
+	.center {
+		grid-template-columns: repeat(auto-fill, minmax(368.66px, 1fr));
+	}
 }
 @media screen and (min-width: 1200px) {
-  .center {
-    width: 80%;
-    max-width: 1170px;
-  }
+	.center {
+		width: 80%;
+		max-width: 1170px;
+	}
 }
