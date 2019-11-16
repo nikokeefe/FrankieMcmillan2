@@ -25,7 +25,7 @@ const About = () => {
 
 	return (
 		<section className={styles.about}>
-			<Title title='' subtitle='About' />
+			<Title title='About' subtitle='Frankie' />
 			<div className={styles.aboutCenter}>
 				<article className={styles.aboutImg}>
 					<div className={styles.imgContainer}>
@@ -40,7 +40,7 @@ const About = () => {
 					<h4>Frankie's World</h4>
 					<p>Delve into Frankie's world of flash fiction and poetry...</p>
 					<AniLink fade to='/about' className='btn-primary'>
-						explore
+						about
 					</AniLink>
 				</article>
 			</div>

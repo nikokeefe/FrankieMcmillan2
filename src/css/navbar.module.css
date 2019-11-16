@@ -16,7 +16,7 @@
 }
 
 .logo-icon {
-	font-size: 1.5rem;
+	font-size: 2rem;
 }
 .fm-logo {
 	display: inline-block;
@@ -42,6 +42,7 @@
 	color: var(--mainBlack);
 	transition: var(--mainTransition);
 	font-weight: bold;
+	font-size: 1rem;
 	letter-spacing: var(--mainSpacing);
 }
 
