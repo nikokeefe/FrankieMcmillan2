@@ -60,22 +60,12 @@ textarea {
 	height: 40px;
 }
 
-/* 
-.formControl,
-.submit {
-	width: 100%;
-	font-size: 1rem;
-	margin-bottom: 1rem;
-	padding: 0.375rem 0.75rem;
-	border: 1px solid var(--darkGrey);
-	border-radius: 0.25rem;
-} */
 .submit {
 	width: 100%;
 	outline: none;
-	border: none;
 	background-color: transparent;
 	border: 1px solid var(--primaryColor);
+	border-radius: 5px;
 	transition: all 0.3s ease 0s;
 	font-size: 1rem;
 	line-height: 24px;
@@ -90,6 +80,7 @@ textarea {
 .submit:hover {
 	background: var(--secondaryColor);
 	color: var(--mainWhite);
+	border-radius: 5px;
 	border-color: var(--darkGrey);
 	transform: scale(1.02);
 }

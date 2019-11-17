@@ -4,7 +4,7 @@
 	color: var(--mainWhite);
 }
 .banner h2 {
-	font-size: 3.3rem;
+	font-size: 3rem;
 	text-transform: lowercase;
 	margin-bottom: 0;
 	padding: 0;
@@ -49,7 +49,7 @@
 
 @keyframes mainBannerButton {
 	0% {
-		bottom: -600px;
+		bottom: -300px;
 	}
 	100% {
 		bottom: 0px;
@@ -58,7 +58,7 @@
 
 @media screen and (min-width: 768px) {
 	.banner h1 {
-		font-size: 4.5rem;
+		font-size: 3rem;
 	}
 	.banner p {
 		width: 70%;

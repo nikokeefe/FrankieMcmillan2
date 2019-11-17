@@ -84,8 +84,8 @@ a {
 }
 
 .btn-white:hover {
-	background: var(--secondaryColor);
-	color: var(--mainWhite);
+	background: var(--mainGrey);
+	color: var(--primaryColor);
 }
 
 .btn-primary {

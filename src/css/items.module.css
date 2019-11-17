@@ -1,35 +1,38 @@
 .books {
-	padding: 4rem 4rem;
-	text-align: center;
-}
-
-.books article {
-	width: 300px;
+	margin: 4rem 0;
 }
 
 .center {
 	width: 80vw;
-	margin: 4rem 1rem;
+	margin: 0 auto;
 	display: grid;
-	grid-template-columns: repeat(auto-fill, 300px, 1fr);
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	grid-column-gap: 2rem;
-	grid-row-gap: 2rem;
+}
+
+.books article {
+	width: 250px;
+}
+.btn {
+	background: var(--primaryColor);
+	color: var(--mainWhite);
+	border: 2px solid var(--primaryColor);
+	text-transform: lowercase;
+	letter-spacing: var(--mainSpacing);
+	color: var(--mainWhite);
+	border: 2px solid var(--mainWhite);
+	border-radius: 4px;
+	padding: 0.9rem 1.6rem;
+	transition: var(--mainTransition);
+	cursor: pointer;
+	display: flex;
+	width: 40%;
 	justify-content: center;
+	margin: 1rem auto;
 }
-@media screen and (min-width: 576px) {
-	.center {
-		padding: 4rem 0;
-		grid-template-columns: repeat(auto-fill, 300px, 1fr);
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-	}
-}
-@media screen and (min-width: 1200px) {
-	.center {
-		width: 100%;
-		text-align: center;
-		padding: 4rem 2rem;
-		justify-content: center;
-	}
+
+.btn:hover {
+	background: transparent;
+	color: var(--primaryColor);
+	border: 2px solid var(--primaryColor);
 }

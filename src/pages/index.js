@@ -16,9 +16,9 @@ export default ({ data }) => {
 			<StyledHero home='true' img={data.defaultBcg.childImageSharp.fluid}>
 				<Banner
 					motion='left'
-					titleTop='Frankie McMillan'
-					titleBottom=''
-					info='is an award winning poet and flash fiction writer from New Zealand.'
+					titleTop=''
+					titleBottom='Frankie McMillan'
+					info='an award winning poet and flash fiction writer from New Zealand.'
 				>
 					<AniLink cover to='/books' className='btn-white'>
 						explore her books here...

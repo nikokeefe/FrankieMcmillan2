@@ -1,5 +1,5 @@
 .books {
-	padding: 4rem 0;
+	padding: 5rem 0 0 0;
 	text-align: center;
 }
 .center {
@@ -15,7 +15,12 @@
 
 .gridBanner {
 	background: rgba(75, 37, 113, 1);
-	background: linear-gradient(rgba(75, 37, 113, 1), rgba(0, 0, 0, 0.7));
+	/* background: linear-gradient(rgba(75, 37, 113, 1), rgba(10, 10, 10, 0.7)); */
+	background-image: linear-gradient(
+		to bottom,
+		rgba(10, 10, 10, 0.5) 100% rgba(10, 10, 10, 0.6) 0%,
+		rgba(10, 10, 10, 0.01) 60%
+	);
 	display: flex;
 	align-items: center;
 	padding: 1rem;

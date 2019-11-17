@@ -32,10 +32,7 @@ const Book = ({ book }) => {
 
 	return (
 		<article className={styles.book}>
-			<div
-				className={styles.imgContainer}
-				onClick={() => navigate(`/books/${book.slug}`)}
-			>
+			<div onClick={() => navigate(`/books/${book.slug}`)}>
 				<Image fluid={mainImage} className={styles.img} alt='single book' />
 				<AniLink cover className={styles.link} to={`/books/${slug}`}></AniLink>
 			</div>

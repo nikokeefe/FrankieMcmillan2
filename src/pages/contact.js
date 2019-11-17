@@ -6,24 +6,24 @@ import StyledHero from '../components/StyledHero';
 import ContactForm from '../components/Contact/ContactForm';
 
 const contact = ({ data }) => {
-  return (
-    <Layout>
-      <StyledHero img={data.defaultBcg.childImageSharp.fluid} />
-      <ContactForm />
-    </Layout>
-  );
+	return (
+		<Layout>
+			<StyledHero img={data.defaultBcg.childImageSharp.fluid} />
+			<ContactForm />
+		</Layout>
+	);
 };
 
 export const query = graphql`
-  query {
-    defaultBcg: file(relativePath: { eq: "connectBcg.jpg" }) {
-      childImageSharp {
-        fluid(quality: 90, maxWidth: 4160) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-  }
+	query {
+		defaultBcg: file(relativePath: { eq: "book_excerpt.jpg" }) {
+			childImageSharp {
+				fluid(quality: 90, maxWidth: 4160) {
+					...GatsbyImageSharpFluid_withWebp
+				}
+			}
+		}
+	}
 `;
 
 export default contact;

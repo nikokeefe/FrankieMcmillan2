@@ -2,7 +2,6 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
-import Book from '../Books/Book';
 import Title from '../../components/Title';
 import StyledFeature from '../../components/StyledFeature';
 import Banner from '../Banner';
@@ -36,12 +35,12 @@ const FeaturedBooks = () => {
 
 	return (
 		<section className={styles.books}>
-			<Title title='Her Latest' subtitle='Publication' />
-			<div className={styles.center}>
+			<Title title='Latest' subtitle='Publication' />
+			{/* <div className={styles.center}>
 				{featuredBook.map(({ node }) => {
 					return;
 				})}
-			</div>
+			</div> */}
 
 			<AniLink
 				fade
@@ -53,9 +52,9 @@ const FeaturedBooks = () => {
 					<div className={styles.gridBanner}>
 						<Banner
 							motion='right'
-							titleTop='‘Every story is like a sky rocket we haven’t seen before – flaring and sparkling in unexpected ways.’ '
+							titleTop=''
 							titleBottom=''
-							info='Lloyd Jones.'
+							info='‘Every story is like a sky rocket we haven’t seen before – flaring and sparkling in unexpected ways.’ Lloyd Jones.'
 						></Banner>
 					</div>
 				</div>

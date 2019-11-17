@@ -25,7 +25,7 @@ const About = () => {
 
 	return (
 		<section className={styles.about}>
-			<Title title='About' subtitle='Frankie' />
+			<Title title='' subtitle='About' />
 			<div className={styles.aboutCenter}>
 				<article className={styles.aboutImg}>
 					<div className={styles.imgContainer}>
