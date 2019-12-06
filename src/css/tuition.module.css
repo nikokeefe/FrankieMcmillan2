@@ -1,40 +1,45 @@
 .teach {
-	padding: 4rem 1rem;
-	background-color: var(--mainGrey);
+  padding: 4rem 1rem;
+  background-color: var(--mainGrey);
 }
 
 .center {
-	width: 80vw;
-	margin: 0 auto;
+  width: 80vw;
+  margin: 0 auto;
 }
 
 .teach p {
-	padding: 4rem auto;
+  padding: 4rem auto;
 }
 
 .teach a {
-	margin: auto;
-	width: 50%;
-	border-bottom: 3px solid var(--darkGrey);
-	padding: 10px;
-	padding: 4rem auto;
-	color: var(--secondaryColor);
-	font-weight: 600;
-	margin-bottom: rem;
+  margin: auto;
+  width: 50%;
+  border-bottom: 3px solid var(--darkGrey);
+  padding: 10px;
+  padding: 4rem auto;
+  color: var(--secondaryColor);
+  font-weight: 600;
+  margin-bottom: rem;
 }
 
 .teach a:hover {
-	background: var(--secondaryColor);
-	color: var(--mainWhite);
-	border-color: var(--darkGrey);
-	border-radius: 5px;
-	transform: scale(1.02);
+  background: var(--secondaryColor);
+  color: var(--mainWhite);
+  border-color: var(--darkGrey);
+  border-radius: 5px;
+  transform: scale(1.02);
+}
+
+.teach-center {
+  width: 80vw;
+  margin: 0 auto;
 }
 
 .image {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 40%;
-	margin-bottom: 2rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  margin-bottom: 2rem;
 }
