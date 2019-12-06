@@ -1,12 +1,12 @@
-import React from 'react';
-import AniLink from 'gatsby-plugin-transition-link/AniLink';
-import { useStaticQuery, graphql } from 'gatsby';
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
-import { BLOCKS, MARKS } from '@contentful/rich-text-types';
+import React from "react";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
+import { useStaticQuery, graphql } from "gatsby";
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import { BLOCKS, MARKS } from "@contentful/rich-text-types";
 
-import Title from '../Title';
+import Title from "../Title";
 
-import styles from '../../css/about.module.css';
+import styles from "../../css/about.module.css";
 
 const getAbout = graphql`
   query getAbout {
@@ -23,7 +23,7 @@ const options = {
     [BLOCKS.PARAGRAPH]: (node, children) => <p>{children}</p>,
     [BLOCKS.EMBEDDED_ASSET]: (node, children) => (
       <img
-        src={`${node.data.target.fields.file['en-US'].url}?w=300&q=100`}
+        src={`${node.data.target.fields.file["en-US"].url}?w=300&q=100`}
         alt=""
       />
     ),
