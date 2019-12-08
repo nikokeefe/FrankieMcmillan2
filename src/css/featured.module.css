@@ -1,69 +1,69 @@
 .books {
-	padding: 5rem 0 0 0;
-	text-align: center;
+  padding: 0;
+  text-align: center;
 }
 .center {
-	justify-content: right;
-	margin: 1rem auto;
+  justify-content: right;
+  margin: 1rem auto;
 }
 
 .grid {
-	display: grid;
-	position: relative;
-	grid-template-columns: 1fr 1fr;
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 1fr;
 }
 
 .gridBanner {
-	background: rgba(75, 37, 113, 1);
-	/* background: linear-gradient(rgba(75, 37, 113, 1), rgba(10, 10, 10, 0.7)); */
-	background-image: linear-gradient(
-		to bottom,
-		rgba(10, 10, 10, 0.5) 100% rgba(10, 10, 10, 0.6) 0%,
-		rgba(10, 10, 10, 0.01) 60%
-	);
-	display: flex;
-	align-items: center;
-	padding: 1rem;
+  background: rgba(75, 37, 113, 1);
+  /* background: linear-gradient(rgba(75, 37, 113, 1), rgba(10, 10, 10, 0.7)); */
+  background-image: linear-gradient(
+    to bottom,
+    rgba(10, 10, 10, 0.5) 100% rgba(10, 10, 10, 0.6) 0%,
+    rgba(10, 10, 10, 0.01) 60%
+  );
+  display: flex;
+  align-items: center;
+  padding: 1rem;
 }
 
 .gridBanner h2 {
-	position: relative;
-	animation: mainFeaturedHeading;
-	animation-duration: 2s;
+  position: relative;
+  animation: mainFeaturedHeading;
+  animation-duration: 2s;
 }
 
 @keyframes mainFeaturedHeading {
-	0% {
-		right: -600px;
-	}
-	100% {
-		right: 0px;
-	}
+  0% {
+    right: -600px;
+  }
+  100% {
+    right: 0px;
+  }
 }
 
 .gridBanner p {
-	position: relative;
-	animation: mainFeaturedParagraph;
-	animation-duration: 2s;
+  position: relative;
+  animation: mainFeaturedParagraph;
+  animation-duration: 2s;
 }
 
 @keyframes mainFeaturedParagraph {
-	0% {
-		right: -600px;
-	}
-	100% {
-		right: 0px;
-	}
+  0% {
+    right: -600px;
+  }
+  100% {
+    right: 0px;
+  }
 }
 
 @media screen and (min-width: 576px) {
-	.center {
-		grid-template-columns: repeat(auto-fill, minmax(368.66px, 1fr));
-	}
+  .center {
+    grid-template-columns: repeat(auto-fill, minmax(368.66px, 1fr));
+  }
 }
 @media screen and (min-width: 1200px) {
-	.center {
-		width: 80%;
-		max-width: 1170px;
-	}
+  .center {
+    width: 80%;
+    max-width: 1170px;
+  }
 }
