@@ -2,12 +2,13 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import { BLOCKS, MARKS } from '@contentful/rich-text-types';
 
 import Layout from '../components/Layout';
 
-import styles from '../css/single-post.module.css';
+import styles from '../css/single-blog.module.css';
 
-const Post = ({ data }) => {
+const Blog = ({ data }) => {
   const {
     title,
     publishedDate,
@@ -18,14 +19,12 @@ const Post = ({ data }) => {
     renderNode: {
       'embedded-asset-block': node => {
         return (
-          <div className="rich">
-            <h3>Image</h3>
+          <div>
             <img
-              width="200"
+              width="300"
               src={node.data.target.fields.file['en-US'].url}
-              alt={title}
+              alt="single"
             />
-            <p>images from frankie</p>
           </div>
         );
       },
@@ -34,19 +33,13 @@ const Post = ({ data }) => {
 
         return (
           <div>
-            <br />
-            <br />
-            <br />
-            <h3>Embedded Post: {title['en-US']}</h3>
+            <div>Post: {title['en-US']}</div>
             <img
-              width="200"
+              width="300"
               src={image['en-US'].fields.file['en-US'].url}
-              alt={title['en-US']}
+              alt="single"
             />
             {documentToReactComponents(text['en-US'])}
-            <br />
-            <br />
-            <br />
           </div>
         );
       },
@@ -55,15 +48,15 @@ const Post = ({ data }) => {
 
   return (
     <Layout>
-      <section className={styles.post}>
+      <section className={styles.blog}>
         <div className={styles.center}>
           <h1>{title}</h1>
           <h4>published on: {publishedDate}</h4>
           <article className={styles.post}>
             {documentToReactComponents(json, options)}
           </article>
-          <AniLink fade to="/posts" className="btn-primary">
-            all Posts
+          <AniLink fade to="/blog" className="btn-primary">
+            all posts
           </AniLink>
         </div>
       </section>
@@ -75,7 +68,7 @@ export const query = graphql`
   query getPost($slug: String!) {
     post: contentfulPost(slug: { eq: $slug }) {
       title
-      publishedDate(formatString: "MMMM Do, YYYY")
+      publishedDate(formatString: "MMM Do, YYYY")
       text {
         json
       }
@@ -83,4 +76,4 @@ export const query = graphql`
   }
 `;
 
-export default Post;
+export default Blog;

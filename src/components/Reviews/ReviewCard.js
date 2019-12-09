@@ -15,13 +15,6 @@ const ReviewCard = ({ review }) => {
           className={styles.img}
           alt="single review"
         />
-        <AniLink fade to={`/reviews/${slug}`} className={styles.link}>
-          Read More...
-        </AniLink>
-        <h6 className={styles.date}>{publishedDate}</h6>
-        <div className={styles.footer}>
-          <h4>{title}</h4>
-        </div>
       </div>
     </article>
   );

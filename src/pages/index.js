@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
+import SEO from '../components/SEO';
 import Layout from '../components/Layout';
 import StyledHero from '../components/StyledHero';
 import Banner from '../components/Banner';
@@ -12,6 +13,7 @@ import FeaturedBook from '../components/Home/FeaturedBook';
 export default ({ data }) => {
   return (
     <Layout>
+      <SEO title="Home" description="this is the homepage description" />
       <StyledHero home="true" img={data.defaultBcg.childImageSharp.fluid}>
         <Banner
           motion="left"

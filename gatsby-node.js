@@ -51,10 +51,32 @@ exports.createPages = async ({ graphql, actions }) => {
 
   data.posts.edges.forEach(({ node }) => {
     createPage({
-      path: `posts/${node.slug}`,
-      component: path.resolve('./src/templates/post-template.js'),
+      path: `blog/${node.slug}`,
+      component: path.resolve('./src/templates/blog-template.js'),
       context: {
         slug: node.slug,
+      },
+    });
+  });
+
+  // number of posts
+  const posts = data.posts.edges;
+
+  // posts per page
+  const postsPerPage = 2;
+
+  // how many pages
+  const numPages = Math.ceil(posts.length / postsPerPage);
+
+  Array.from({ length: numPages }).forEach((_, index) => {
+    createPage({
+      path: index === 0 ? `/blogs` : `/blogs/${index + 1}`,
+      component: path.resolve('./src/templates/blog-list-template.js'),
+      context: {
+        limit: postsPerPage,
+        skip: index * postsPerPage,
+        numPages,
+        currentPage: index + 1,
       },
     });
   });

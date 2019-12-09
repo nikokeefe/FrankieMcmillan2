@@ -4,12 +4,16 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: 'frankie mcmillan',
+    title: 'Frankie McMillan',
     description: 'Delve into the world of Frankie McMillan, author & poet.',
     author: '@nikwillok',
+    twitterUsername: '@frankie_mcmillan',
+    image: '/frankie_backyard.jpg',
+    siteUrl: 'https://nervous-bose-ae5d51.netlify.com',
   },
 
   plugins: [
+    'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
