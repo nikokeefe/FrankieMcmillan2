@@ -14,6 +14,7 @@ module.exports = {
 
   plugins: [
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sitemap',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -26,6 +27,14 @@ module.exports = {
       options: {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://nervous-bose-ae5d51.netlify.com',
+        sitemap: 'https://nervous-bose-ae5d51.netlify.com/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }],
       },
     },
     `gatsby-transformer-remark`,

@@ -5,6 +5,7 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 
 import Layout from '../components/Layout';
 import StyledHero from '../components/StyledHero';
+import SEO from '../components/SEO';
 
 import styles from '../css/single-review.module.css';
 
@@ -33,6 +34,7 @@ const Review = ({ data }) => {
 
   return (
     <Layout>
+      <SEO title={title} />
       <StyledHero />
       <section className={styles.review}>
         <div className={styles.center}>

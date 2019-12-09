@@ -5,6 +5,7 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import Layout from '../components/Layout';
 import BlogCard from '../components/Blog/BlogCard';
 import Title from '../components/Title';
+import SEO from '../components/SEO';
 
 import styles from '../css/blog.module.css';
 
@@ -21,6 +22,7 @@ const Blog = props => {
 
   return (
     <Layout>
+      <SEO title="Blogs" />
       <section className={styles.blog}>
         <Title title="latest" subtitle="posts" />
         <div className={styles.center}>
