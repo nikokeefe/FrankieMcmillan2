@@ -16,10 +16,6 @@ export default [
     text: 'interviews',
   },
   {
-    path: '/reviews',
-    text: 'reviews',
-  },
-  {
     path: '/tuition',
     text: 'tuition',
   },
