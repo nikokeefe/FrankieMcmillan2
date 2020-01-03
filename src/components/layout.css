@@ -84,12 +84,12 @@ ul {
   display: inline-block;
   transition: var(--mainTransition);
   cursor: pointer;
-  margin: 1rem 0;
 }
 
 .btn-white:hover {
   background: var(--mainGrey);
   color: var(--primaryColor);
+  margin: 1rem 0;
 }
 
 .btn-primary {
