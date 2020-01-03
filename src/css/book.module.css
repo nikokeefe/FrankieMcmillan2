@@ -1,24 +1,36 @@
 .book {
-	position: relative;
-	transition: var(--mainTransition);
-	cursor: pointer;
-	border-radius: 5px;
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-	grid-column-gap: 2rem;
-	margin: 1rem 0;
+  position: relative;
+  transition: var(--mainTransition);
+  cursor: pointer;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-column-gap: 2rem;
+  margin: 1rem 0;
 }
 
 .book:hover {
-	cursor: pointer;
-	transform: scale(1.02);
-	box-shadow: var(--darkShadow);
+  cursor: pointer;
+  transform: scale(1.02);
+  box-shadow: var(--darkShadow);
 }
 
 .img {
-	transition: var(--mainTransition);
-	border-radius: 5px;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
+  transition: var(--mainTransition);
+  border-radius: 5px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  margin-bottom: 1.25rem;
+  letter-spacing: var(--mainSpacing);
 }
