@@ -28,3 +28,7 @@ h2,
 h3 {
   font-family: 'Raleway', sans-serif;
 }
+
+ul {
+  margin: 4rem 0;
+}
