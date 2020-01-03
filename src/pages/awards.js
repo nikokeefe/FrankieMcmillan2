@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 import Layout from '../components/Layout';
 import StyledHero from '../components/StyledHero';
@@ -12,6 +13,9 @@ const awards = ({ data }) => {
       <SEO title="Awards" />
       <StyledHero img={data.defaultBcg.childImageSharp.fluid} />
       <AwardList />
+      <AniLink fade to="/books" className="btn-primary">
+        home
+      </AniLink>
     </Layout>
   );
 };
