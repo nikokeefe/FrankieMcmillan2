@@ -8,14 +8,6 @@ export default [
     text: 'books',
   },
   {
-    path: '/blog',
-    text: 'blog',
-  },
-  {
-    path: '/blogs',
-    text: 'blogs',
-  },
-  {
     path: '/awards',
     text: 'awards',
   },
