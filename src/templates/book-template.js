@@ -40,16 +40,16 @@ const Template = ({ data }) => {
               );
             })}
           </div>
-          <h2>{title}</h2>
+          {/* <h2>{title}</h2> */}
           <div className={styles.info}>
             {/* <p>
 							<FaMoneyBillWave className={styles.icon} />
 							some sorta quote or pages or ...
 						</p> */}
-            <p>
+            {/* <p>
               <FaBook className={styles.icon} />
               published: {publishedDate}
-            </p>
+            </p> */}
             <div className={styles.desc}>
               <div
                 dangerouslySetInnerHTML={{
